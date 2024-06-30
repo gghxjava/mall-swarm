@@ -16,6 +16,9 @@ public class ResourceRoleRulesHolder {
     @Autowired
     private UmsResourceService resourceService;
 
+    /**
+     * 设置redis的角色hash
+     */
     @PostConstruct
     public void initResourceRolesMap(){
         resourceService.initResourceRolesMap();
